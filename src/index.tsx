@@ -28,8 +28,8 @@ class App extends React.Component {
         <ReactMultiEmail
           placeholder="Input your Email Address"
           emails={emails}
-          onChange={(_emails: string[]) => {
-            this.setState({ emails: _emails });
+          onChange={(emails: []) => {
+            this.setState({ emails: emails });
           }}
           getLabel={(
             email: string,
